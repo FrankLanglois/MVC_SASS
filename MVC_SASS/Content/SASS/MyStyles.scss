@@ -1,0 +1,73 @@
+﻿@import "MyConstants.scss";
+
+@mixin myMixin {
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 100% $base-font;
+    color: $base-color;
+    font-size: $standard-font-Size;
+
+    h1 {
+        font-size: 2em;
+        @include myMixin;
+    }
+
+    .container {
+        width: $base-width;
+    }
+
+    .column-half {
+        width: $base-width / 2;
+    }
+
+    .column-fifth {
+        width: $base-width / 5;
+    }
+
+    .btn-default {
+        color: $primary-color;
+        background-color: $background-primary-color;
+    }
+}
+
+ul {
+    list-style: none;
+
+    li {
+        padding: 15px;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #444;
+        }
+    }
+}
+
+.dialog-button {
+    box-sizing: border-box;
+    color: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.confirm {
+    @extend .dialog-button;
+    background-color: #87bae1;
+    float: left;
+}
+
+.cancel {
+    @extend .dialog-button;
+    background-color: #e4749e;
+    float: right;
+}
+
+

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/SASS/MyStyles.css",
+    "inputFile": "Content/SASS/MyStyles.scss"
+  },
+  {
+    "outputFile": "Content/SASS/MyConstants.css",
+    "inputFile": "Content/SASS/MyConstants.scss"
+  }
+]
